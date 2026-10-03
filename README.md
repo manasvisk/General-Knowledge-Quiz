@@ -194,6 +194,10 @@ Performance: Good Job
 
 The question text and answer are on the same line in a terminal because `input()` displays its prompt without ending the line.
 
+## Quiz Interface
+
+![General Knowledge Quiz interface](quiz-screenshot.png)
+
 ## 10. Learning Outcomes
 
 - Read text from a user with `input()`.
