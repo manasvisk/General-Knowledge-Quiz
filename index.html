@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f4ed">
+    <meta name="description" content="Three quick general knowledge questions. How curious are you?">
+    <title>The General Knowledge Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght,SOFT,WONK@9..144,500,20,1;9..144,600,20,1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="The General Knowledge Quiz home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.5" />
+              <path d="M24.9 14.7 22 22l-7 3 2.9-7.3 7-3Z" fill="currentColor" />
+              <circle cx="20" cy="20" r="2" fill="#d8ed67" />
+            </svg>
+          </span>
+          <span class="brand-name">The General<br>Knowledge Quiz</span>
+        </a>
+        <div class="header-note"><span class="live-dot"></span> A THREE-QUESTION FIELD TEST</div>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <div>
+            <p class="eyebrow"><span>CURIOUS MINDS CLUB</span><span class="eyebrow-rule"></span><span>EDITION 01</span></p>
+            <h1 id="page-title">The General<br class="desktop-break"> Knowledge Quiz<span class="title-period">.</span></h1>
+            <p class="intro-copy">A small tour of the big, fascinating world.<br>Three questions, just for the joy of knowing.</p>
+          </div>
+          <div class="round-stamp" aria-label="Three questions, one round">
+            <span class="stamp-number">03</span>
+            <span class="stamp-caption">QUESTIONS<br>ONE ROUND</span>
+            <svg class="stamp-orbit" viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="54" />
+              <path d="M60 2v8M60 110v8M2 60h8M110 60h8M19 19l6 6M95 95l6 6M101 19l-6 6M25 95l-6 6" />
+            </svg>
+          </div>
+        </section>
+
+        <section class="quiz" aria-label="Quiz">
+          <div class="quiz-topline">
+            <div class="progress-copy">
+              <span class="eyebrow" id="progress-label">QUESTION 01 <span class="muted">/ 03</span></span>
+              <span class="progress-caption" id="progress-caption">A good place to begin.</span>
+            </div>
+            <div class="score-display" aria-live="polite">
+              <span class="score-label">YOUR SCORE</span>
+              <span class="score-value"><span id="score-count">0</span><span class="score-total">/ 3</span></span>
+            </div>
+          </div>
+
+          <div class="progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0" id="progress-bar">
+            <span class="progress-segment is-current" data-segment="0"></span>
+            <span class="progress-segment" data-segment="1"></span>
+            <span class="progress-segment" data-segment="2"></span>
+          </div>
+
+          <div class="quiz-body">
+            <section class="question-panel" id="question-panel" aria-live="polite">
+              <div class="question-meta">
+                <span class="question-index" id="question-index">01</span>
+                <span class="meta-divider"></span>
+                <span class="category-label" id="question-category">GEOGRAPHY</span>
+              </div>
+              <h2 id="question-text">What is the largest ocean on Earth?</h2>
+              <p class="answer-prompt">Take your best shot. No map required.</p>
+
+              <form class="answer-form" id="answer-form">
+                <label class="visually-hidden" for="answer-input">Your answer</label>
+                <input id="answer-input" name="answer" type="text" placeholder="Type your answer..." autocomplete="off" autocapitalize="off" spellcheck="false" required>
+                <button class="submit-button" type="submit">
+                  <span>Check answer</span>
+                  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                </button>
+              </form>
+              <p class="answer-feedback" id="answer-feedback" role="status" aria-live="polite" hidden></p>
+              <button class="next-button" id="next-button" type="button" hidden>
+                <span>Next question</span>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </button>
+            </section>
+
+            <aside class="illustration-panel" aria-label="Illustrated globe">
+              <div class="illustration-heading"><span>THE WIDE WORLD</span><span>01 — 03</span></div>
+              <svg class="globe-art" viewBox="0 0 440 330" role="img" aria-labelledby="globe-title globe-description">
+                <title id="globe-title">A field-guide illustration of Earth</title>
+                <desc id="globe-description">A green globe with latitude and longitude lines, small stars, and a compass mark.</desc>
+                <defs>
+                  <clipPath id="globe-clip"><circle cx="221" cy="164" r="119" /></clipPath>
+                </defs>
+                <path class="orbit-line" d="M44 192c39-87 129-141 232-120 53 11 89 43 113 87" />
+                <circle class="globe-shadow" cx="227" cy="174" r="119" />
+                <circle class="globe-base" cx="221" cy="164" r="119" />
+                <g clip-path="url(#globe-clip)">
+                  <path class="globe-grid" d="M102 164h238M111 121h220M111 207h220M221 45c-38 33-57 73-57 119s19 86 57 119M221 45c38 33 57 73 57 119s-19 86-57 119M221 45v238" />
+                  <path class="continent" d="m137 91 20-14 22 4 8 13-12 11-3 18-15 8-9 23-13-5-8-20-17-9 7-19 20-10Zm71 79 14 4 7 16-7 16 10 18-10 18-12-10-6-25-12-15 3-18Zm62-91 23 4 16 15 22 3 17 16-12 14-25-5-11 12-17-9-18 2-14-15 5-20Zm55 83 21-8 17 9-3 18-19 8-16-10Z" />
+                  <path class="globe-highlight" d="M126 129c14-42 49-71 91-79" />
+                </g>
+                <circle class="globe-outline" cx="221" cy="164" r="119" />
+                <path class="star star-one" d="m353 69 3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8Z" />
+                <path class="star star-two" d="m86 231 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" />
+                <circle class="orbit-dot" cx="61" cy="113" r="4" />
+                <circle class="orbit-dot coral-dot" cx="372" cy="235" r="5" />
+                <path class="compass-mark" d="m356 260 8-20 8 20-8-5-8 5Z" />
+                <text class="compass-letter" x="364" y="275" text-anchor="middle">N</text>
+              </svg>
+              <div class="illustration-footer"><span>KEEP LOOKING UP</span><span class="footer-coordinate">20° N / 40° E</span></div>
+            </aside>
+          </div>
+
+          <section class="completion-panel" id="completion-panel" aria-live="polite" hidden>
+            <div class="completion-mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="27" stroke="currentColor" stroke-width="1.5" /><path d="m20 32 8 8 17-18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </div>
+            <p class="eyebrow">ROUND COMPLETE</p>
+            <h2 id="completion-title">A curious mind, indeed.</h2>
+            <p class="completion-copy" id="completion-copy"></p>
+            <button class="restart-button" id="restart-button" type="button">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16.2 8a6.5 6.5 0 1 0 .2 4M16 4v4h-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              <span>Play again</span>
+            </button>
+          </section>
+        </section>
+
+        <footer class="site-footer">
+          <span>MADE FOR THE JOY OF KNOWING</span>
+          <span class="footer-center"><i></i> A LITTLE KNOWLEDGE GOES A LONG WAY</span>
+          <span>EST. MMXXIV</span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
